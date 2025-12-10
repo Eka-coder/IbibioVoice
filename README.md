@@ -5,20 +5,25 @@
 ```
 AA_Ibibio_Voice/
 │
-├── data/
-│   ├── processed_128/          # Original 128×128 images
-│   └── lowres_32/              # Downscaled 32×32 images
-|   └── test/                   # Unseen dataset used to evaluate models
-├── models/                    # Trained model weights
-├── notebooks/                 # Notebook for classifiers A, SRGAN and B
-|   └── logs/                  # Logs for Classifier A Training training
-├── checkpoints/               # Model weights during training of SRGAN
-├── output/                    # SRGAN-generated images
+├── clips/                                  # All clips in CommonVoice and Custom Dataset
+├── ibb_stage2_custom/                      # Final model with custom tuning on dataset
+├── Notebooks/                              # Notebook for models
+|   └── CV_with_Full_Diagraph.ipynb         # Model Training with Full Diagraphs
+|   └── CV_with_Half_Diagraph.ipynb         # Model Training with Full Diagraphs
+|   └── Phase_2_Custom_Fine_Tuning.ipynb    # Phase 2 model custom tuning on dataset
+|   └── Common_Voice(1).ipynb               # Test Training Notebook
+├── wav2vec/                                # CV with Half Diagraph Model
+|   └── checkpoint-3740/                    # 2nd Best Model
+|   └── checkpoint-3960/                    # Best Model
+|   └── runs/                               # Information on runs
+├── wav2vec2/                               # CV with Full Diagraph Model
+|   └── checkpoint-3740/                    # 4th Best Model
+|   └── checkpoint-3960/                    # 3rd Model
+|   └── runs/                               # Information on runs
 └── README.md                  # This file
 ```
 
 
 ## Author: Eka Ebong
 - **Course**: Applied AI
-- **Assignment**: Midterm Exam
-- **Focus**: SRGAN implementation and evaluation
+- **Assignment**: Final Project
